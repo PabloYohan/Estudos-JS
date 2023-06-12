@@ -1,11 +1,10 @@
-const cpf = "705.484.450-52";
-
 function transformaCPF(cpf) {
   const aux = cpf.split("-");
   const numeros = aux[0].replace(/\D+/g, '').split("");
   const vetNum = numeros.map((v) => parseInt(v));
   return vetNum;
 }
+
 function juntaCPF(cpf, digito1, digito2) {
   const aux = `${cpf[0]}${cpf[1]}${cpf[2]}`;
   const aux1 = `${cpf[3]}${cpf[4]}${cpf[5]}`;
@@ -62,4 +61,4 @@ function validaCPF(cpf) {
 
   return true;
 }
-console.log(validaCPF("705.484.450-52"));
+

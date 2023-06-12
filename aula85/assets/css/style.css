@@ -1,0 +1,52 @@
+*{
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body{
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.container{
+  max-width: 640px;
+  margin: 50px auto;
+  background: rgb(49, 2, 93);
+  padding: 20px;
+}
+
+form input, form label, form button{
+  display: block;
+  width: 100%;
+  margin: 10px;
+}
+
+form input{
+  font-size: 24px;
+  padding: 0 20px;
+  height: 50px;
+}
+
+form input:hover{
+  outline: 1px solid black;
+}
+
+form button{
+  color: white;
+  border: none;
+  background-color: black;
+  font-size: 18px;
+  font-weight: 700;
+  height: 30px;
+  cursor: pointer;
+}
+
+.error{
+  color: red;
+  font-size: 14px;
+  margin-left: 30px;
+}
